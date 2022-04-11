@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Chapter_03.rpy", line 93: expected statement.
+    Jump Chapter04
+                  ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sat Apr  2 18:19:34 2022

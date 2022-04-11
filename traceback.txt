@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/Chapter_03.rpy", line 76, in script
+    play music cafe fadein 1.0
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/Chapter_03.rpy", line 76, in <module>
+    play music cafe fadein 1.0
+NameError: name 'cafe' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/Chapter_03.rpy", line 76, in script
+    play music cafe fadein 1.0
+  File "/Users/misheelsodgerel/Desktop/renpy-7.4.11-sdk/renpy/ast.py", line 2015, in execute
+    self.call("execute")
+  File "/Users/misheelsodgerel/Desktop/renpy-7.4.11-sdk/renpy/ast.py", line 2003, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "/Users/misheelsodgerel/Desktop/renpy-7.4.11-sdk/renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "/Users/misheelsodgerel/Desktop/renpy-7.4.11-sdk/renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/misheelsodgerel/Desktop/renpy-7.4.11-sdk/renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/Chapter_03.rpy", line 76, in <module>
+    play music cafe fadein 1.0
+NameError: name 'cafe' is not defined
+
+Darwin-21.3.0-x86_64-i386-64bit
+Ren'Py 7.4.11.2266
+Damage Control 1.0
+Sat Apr  2 18:38:46 2022
